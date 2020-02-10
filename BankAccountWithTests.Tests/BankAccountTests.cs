@@ -45,7 +45,7 @@ namespace BankAccountWithTests.Tests
             BankAccount acc = new BankAccount("123456");
             double depositAmount = 100.00;
             double initialBalance = 0.00;
-            double expectedBalance = 100.00;
+            double expectedBalance = initialBalance + depositAmount;
 
             // Act - Call the method under test (Deposit() in this case)
             acc.Deposit(depositAmount);
